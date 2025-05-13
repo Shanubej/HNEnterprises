@@ -7,8 +7,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o'
 @Component({
   selector: 'app-homepage',
   imports: [HeaderComponent, FooterComponent, RouterModule, CarouselModule],
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  templateUrl: 'homepage.component.html',
+  styleUrls: ['homepage.component.scss']
 })
 export class HomepageComponent {
 
