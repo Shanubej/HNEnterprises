@@ -7,8 +7,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o'
 @Component({
   selector: 'app-homepage',
   imports: [HeaderComponent, FooterComponent, RouterModule, CarouselModule],
-  templateUrl: 'homepage.component.html',
-  styleUrls: ['homepage.component.scss']
+  templateUrl: './homepage.component.html',
+  styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
 
@@ -39,8 +39,8 @@ export class HomepageComponent {
     // rtl: true,
     nav: true,
     navText: [
-      '<img src=../../Images/Home/slider_prev_icon_white.svg>',
-      '<img src=../../Images/Home/slider_next_icon_white.svg>',
+      '<img src=Images/Home/slider_prev_icon_white.svg>',
+      '<img src=Images/Home/slider_next_icon_white.svg>',
     ],
     autoWidth: false,
   };
