@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { CarouselModule } from 'ngx-owl-carousel-o'
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-homepage',
@@ -11,6 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o'
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
+imageUrl = environment.baseUrl;
 
   banner_slider: CarouselModule = {
     items: 1,
@@ -39,8 +41,8 @@ export class HomepageComponent {
     // rtl: true,
     nav: true,
     navText: [
-      '<img src=Images/Home/slider_prev_icon_white.svg>',
-      '<img src=Images/Home/slider_next_icon_white.svg>',
+      '<img src='+this.imageUrl+'/Home/slider_prev_icon_white.svg>',
+      '<img src='+this.imageUrl+'/Home/slider_next_icon_white.svg>',
     ],
     autoWidth: false,
   };
@@ -55,7 +57,7 @@ export class HomepageComponent {
     margin: 13,
     autoplay: true,
     autoplayTimeout: 3000,
-    navText: ['<img src="/Images/Clients/light-left-arrow.png" alt="">', '<img src="/Images/Clients/light-right-arrow.png" alt="">'],
+    navText: ['<img src="'+ this.imageUrl + '/Clients/light-left-arrow.png" alt="">', '<img src="'+this.imageUrl+'/Clients/light-right-arrow.png" alt="">'],
     responsive: {
       0: {
         items: 1

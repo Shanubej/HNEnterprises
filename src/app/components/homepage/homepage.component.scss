@@ -349,18 +349,12 @@
   }
 
   :host::ng-deep .banner_slider .owl-carousel .owl-nav .owl-prev {
-    /* top: auto;
-        bottom: -30px;
-        left: 43%; */
     position: static;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 50%;
   }
 
   :host::ng-deep .banner_slider .owl-carousel .owl-nav .owl-next {
-    /* top: auto;
-        bottom: -30px;
-        right: 43%; */
     position: static;
     margin-left: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
