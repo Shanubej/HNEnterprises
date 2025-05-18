@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+imageUrl=environment.baseUrl;
 }
