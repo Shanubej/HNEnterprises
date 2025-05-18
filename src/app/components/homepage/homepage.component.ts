@@ -41,8 +41,8 @@ imageUrl = environment.baseUrl;
     // rtl: true,
     nav: true,
     navText: [
-      '<img src='+this.imageUrl+'/Home/slider_prev_icon_white.svg>',
-      '<img src='+this.imageUrl+'/Home/slider_next_icon_white.svg>',
+      '<img src='+this.imageUrl+'/Home/left-arrow-48.png>',
+      '<img src='+this.imageUrl+'/Home/right-arrow-48.png>',
     ],
     autoWidth: false,
   };
