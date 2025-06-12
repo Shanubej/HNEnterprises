@@ -41,8 +41,8 @@ imageUrl = environment.baseUrl;
     // rtl: true,
     nav: true,
     navText: [
-      '<img src='+this.imageUrl+'/Home/left-arrow-48.png>',
-      '<img src='+this.imageUrl+'/Home/right-arrow-48.png>',
+      '<img src=Images/Home/left-arrow-48.png>',
+      '<img src=Images/Home/right-arrow-48.png>',
     ],
     autoWidth: false,
   };
@@ -57,7 +57,7 @@ imageUrl = environment.baseUrl;
     margin: 13,
     autoplay: true,
     autoplayTimeout: 3000,
-    navText: ['<img src="'+ this.imageUrl + '/Clients/light-left-arrow.png" alt="">', '<img src="'+this.imageUrl+'/Clients/light-right-arrow.png" alt="">'],
+    navText: ['<img src="Images/Clients/light-left-arrow.png" alt="">', '<img src="Images/Clients/light-right-arrow.png" alt="">'],
     responsive: {
       0: {
         items: 1
