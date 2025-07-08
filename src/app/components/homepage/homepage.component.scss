@@ -34,8 +34,9 @@
       }
 
       .product-box {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         position: relative;
+        height: 90%;
 
         img {
           width: 100% !important;
@@ -45,17 +46,18 @@
         .product-title {
           position: absolute;
           top: 5px;
-          left: 25px;
-          right: 25px;
-          padding: 15px;
-          background-color: #eb3449;
+          left: 50px;
+          right: 50px;
+          padding: 7px;
+          background-color: #9c2a34;
           text-transform: uppercase;
           color: #fff;
           text-align: center;
           font-weight: 300;
 
-          margin-top: 20px;
+          margin-top: 15px;
           margin-bottom: 10px;
+          font-size: 1.25rem !important;
         }
       }
 
@@ -244,6 +246,121 @@
   top: 44%;
   /* right: 0px; */
   right: 40px;
+}
+
+
+.common_heading {
+  h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #000000;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      border: 1px solid #073266;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 7.2%;
+      left: 47%;
+    }
+
+    &::before {
+      border: 1px solid #073266;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 4.2%;
+      left: 48.4%;
+      bottom: -9px;
+    }
+  }
+}
+
+.contact_us_section {
+  padding: 30px 0px;
+}
+
+.contact_wrapper {
+  background: cadetblue;
+  border-radius: 20px;
+  padding: 23px;
+  background-image: url(../../../../public/Images/Home/ContactUS_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin: 100px 0px 0px 0px;
+}
+
+.contact_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+
+.contact_left_col {
+  width: 29%;
+  padding: 5px 15px;
+}
+
+.contact_icon {
+  margin-bottom: 10px;
+}
+
+.contact_content a {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.contact_mid_col {
+  width: 42%;
+  padding: 5px 15px;
+  margin-top: -80px;
+}
+
+.contact-count-svg {
+  margin-bottom: 20px;
+}
+
+.contact-count-title h3 {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0px !important;
+}
+
+.contact_right_col {
+  width: 29%;
+  padding: 5px 15px;
+}
+
+.contact_content a {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
 
 
@@ -480,118 +597,4 @@
     right: 41%;
     bottom: 0px;
   }
-}
-
-.common_heading {
-  h4 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 38px;
-    color: #000000;
-    padding-bottom: 15px;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-
-    &::after {
-      border: 1px solid #073266;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: 7.2%;
-      left: 47%;
-    }
-
-    &::before {
-      border: 1px solid #073266;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: 4.2%;
-      left: 48.4%;
-      bottom: -9px;
-    }
-  }
-}
-
-.contact_us_section {
-  padding: 30px 0px;
-}
-
-.contact_wrapper {
-  background: #FFF3EB;
-  border-radius: 20px;
-  padding: 23px;
-  background-image: url(../../../../public/Images/Home/ContactUS_background.jpg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  margin: 100px 0px 0px 0px;
-}
-
-.contact_row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-
-}
-
-.contact_left_col {
-  width: 29%;
-  padding: 5px 15px;
-}
-
-.contact_icon {
-  margin-bottom: 10px;
-}
-
-.contact_content a {
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-
-.contact_mid_col {
-  width: 42%;
-  padding: 5px 15px;
-  margin-top: -80px;
-}
-
-.contact-count-svg {
-  margin-bottom: 20px;
-}
-
-.contact-count-title h3 {
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 0px !important;
-}
-
-.contact_right_col {
-  width: 29%;
-  padding: 5px 15px;
-}
-
-.contact_content a {
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
-    color: #FFFFFF;
 }

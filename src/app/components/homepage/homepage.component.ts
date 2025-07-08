@@ -3,6 +3,7 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -12,9 +13,9 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
-imageUrl = environment.baseUrl;
+  imageUrl = environment.baseUrl;
 
-  banner_slider: CarouselModule = {
+  banner_slider: OwlOptions = {
     items: 1,
     loop: true,
     mouseDrag: true,
@@ -24,6 +25,7 @@ imageUrl = environment.baseUrl;
     navSpeed: 1000,
     autoplay: true,
     autoplayHoverPause: true,
+    autoplayTimeout: 1800,
     responsive: {
       0: {
         items: 1,
@@ -46,8 +48,8 @@ imageUrl = environment.baseUrl;
     ],
     autoWidth: false,
   };
-  
-  gallary: CarouselModule = {
+
+  gallary: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
@@ -75,8 +77,7 @@ imageUrl = environment.baseUrl;
     nav: true
   }
 
-  
-  partnersOptions: CarouselModule = {
+  partnersOptions: OwlOptions = {
     items: 8,
     loop: true,
     mouseDrag: true,
@@ -110,6 +111,28 @@ imageUrl = environment.baseUrl;
     },
     nav: false,
     autoWidth: false
+  }
+
+  HeaderSlider: any = [
+    { ImageName: "WhatsApp_Image1.jpeg" },
+    { ImageName: "WhatsApp_Image2.jpeg" },
+    { ImageName: "WhatsApp_Image3.jpeg" },
+    { ImageName: "WhatsApp_Image4.jpeg" },
+    { ImageName: "WhatsApp_Image5.jpeg" },
+    { ImageName: "WhatsApp_Image6.jpeg" },
+    { ImageName: "WhatsApp_Image7.jpeg" },
+    { ImageName: "WhatsApp_Image8.jpeg" },
+    { ImageName: "WhatsApp_Image9.jpeg" },
+    { ImageName: "WhatsApp_Image10.jpeg" },
+    { ImageName: "WhatsApp_Image11.jpeg" },
+    { ImageName: "WhatsApp_Image12.jpeg" },
+    { ImageName: "WhatsApp_Image13.jpeg" },
+    { ImageName: "WhatsApp_Image14.jpeg" },
+    { ImageName: "WhatsApp_Image15.jpeg" },
+  ]
+
+  constructor() {
+
   }
 
 }
